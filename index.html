@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio2</title>
-
+    <!--Normalise-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Custom Styles-->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -15,100 +23,118 @@
   <body>
     <!-- Верхня лінія -->
     <header class="page-header">
-      <nav>
-        <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
-        <ul class="nav-list list site-nav">
-          <li class="nav-item"><a class="nav-link link current" href="./index.html">Студія</a></li>
-          <li class="nav-item"><a class="nav-link link" href="./portfolio.html">Портфоліо</a></li>
-          <li class="nav-item"><a class="nav-link link" href="./index.html">Контакти</a></li>
+      <div class="header-container container header-border">
+        <nav class="header-nav">
+          <a class="logo link" href="./index.html">Web<span class="logo-header">Studio</span></a>
+          <ul class="header-nav-list list site-nav">
+            <li class="header-nav-item">
+              <a class="header-nav-link link current" href="./index.html">Студія</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="./index.html">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact list">
+          <li>
+            <a class="link header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li><a class="link header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li><a class="link header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link header-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <!-- Шапка -->
     <main>
       <section class="main-bg">
-        <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="main-btn">Замовити послугу</button>
+        <div class="container">
+          <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="main-btn">Замовити послугу</button>
+        </div>
       </section>
       <!-- Особливості -->
-      <section class="features section-bgr">
-        <h2 hidden>Особливості</h2>
-        <ul class="features-list list">
-          <li class="features-item">
-            <h3 class="fetures-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="features-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="fetures-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="features-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="fetures-title">ПЛАНУВАННЯ</h3>
-            <p class="features-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="features-item">
-            <h3 class="fetures-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="features-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-            </p>
-          </li>
-        </ul>
+      <section class="features section">
+        <div class="container">
+          <h2 hidden>Особливості</h2>
+          <ul class="features-list list">
+            <li class="features-item">
+              <h3 class="fetures-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="features-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="fetures-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="features-text">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="fetures-title">ПЛАНУВАННЯ</h3>
+              <p class="features-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="features-item">
+              <h3 class="fetures-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="features-text">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- секція 3 картинки -->
       <section class="section-bgr">
-        <h2 class="section-title">Чим ми займаємося</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/what-we-do/img-0-min.jpg"
-              alt="планшет з клавіатурою"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img src="./images/what-we-do/img-1-min.jpg" alt="ноутбук" width="370" height="294" />
-          </li>
-          <li>
-            <img src="./images/what-we-do/img-2-min.jpg" alt="планшет" width="370" height="294" />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">Чим ми займаємося</h2>
+          <ul class="work-img list">
+            <li>
+              <img
+                src="./images/what-we-do/img-0-min.jpg"
+                alt="планшет з клавіатурою"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img src="./images/what-we-do/img-1-min.jpg" alt="ноутбук" width="370" height="294" />
+            </li>
+            <li>
+              <img src="./images/what-we-do/img-2-min.jpg" alt="планшет" width="370" height="294" />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Команда -->
-      <section class="team-bgr">
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="list">
-          <li class="card">
-            <img src="./images/team/igor.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
-            <h3 class="team-title">Ігор Дем'яненко</h3>
-            <p class="team-text" lang="en">Product Designer</p>
-          </li>
-          <li class="card">
-            <img src="./images/team/olga.jpg" alt="Ольга Рєпіна" width="270" height="260" />
-            <h3 class="team-title">Ольга Рєпіна</h3>
-            <p class="team-text" lang="en">Frontend Developer</p>
-          </li>
-          <li class="card">
-            <img src="./images/team/mykola.jpg" alt="Микола Тарасов" width="270" height="260" />
-            <h3 class="team-title">Микола Тарасов</h3>
-            <p class="team-text" lang="en">Marketing</p>
-          </li>
-          <li class="card">
-            <img src="./images/team/myhaylo.jpg" alt="Михайло Єрмаков" width="270" height="260" />
-            <h3 class="team-title">Михайло Єрмаков</h3>
-            <p class="team-text" lang="en">UI Designer</p>
-          </li>
-        </ul>
+      <section class="team-section section">
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="team-card list">
+            <li class="card">
+              <img src="./images/team/igor.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
+              <h3 class="team-title">Ігор Дем'яненко</h3>
+              <p class="team-text" lang="en">Product Designer</p>
+            </li>
+            <li class="card">
+              <img src="./images/team/olga.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+              <h3 class="team-title">Ольга Рєпіна</h3>
+              <p class="team-text" lang="en">Frontend Developer</p>
+            </li>
+            <li class="card">
+              <img src="./images/team/mykola.jpg" alt="Микола Тарасов" width="270" height="260" />
+              <h3 class="team-title">Микола Тарасов</h3>
+              <p class="team-text" lang="en">Marketing</p>
+            </li>
+            <li class="card">
+              <img src="./images/team/myhaylo.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+              <h3 class="team-title">Михайло Єрмаков</h3>
+              <p class="team-text" lang="en">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Підвал -->
