@@ -357,12 +357,14 @@ address {
 
 .filter {
   display: flex;
-  margin: 100px 0 50px 0;
   justify-content: center;
   gap: 8px;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .btn-text {
+  padding: 6px 22px;
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -410,6 +412,8 @@ address {
   color: var(--text-color);
   padding-top: 20px;
   margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .portfolio-descr {
@@ -418,6 +422,8 @@ address {
   letter-spacing: 0.03em;
   color: var(--description-text-color);
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .portfolio-card {
@@ -427,5 +433,4 @@ address {
   flex-basis: calc(100%-180px / 9);
   align-items: center;
   padding-bottom: 94px;
-  padding-top: 56px;
 }
