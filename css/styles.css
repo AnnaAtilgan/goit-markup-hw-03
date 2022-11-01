@@ -361,6 +361,7 @@ address {
   gap: 8px;
   margin: 0;
   margin-bottom: 50px;
+  padding-left: 0;
 }
 
 .btn-text {
@@ -430,7 +431,6 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc(100%-180px / 9);
+  flex-basis: calc((100% - 60px) / 3);
   align-items: center;
-  padding-bottom: 94px;
 }
